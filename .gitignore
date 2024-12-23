@@ -22,6 +22,7 @@ wp-config.php
 
 # Example themes
 /wp-content/themes/twenty*/
+/wp-content/themes/divizielkedesign/assets/projects/sparkjoypublishing/video/spark-and-home-introduction-video.mp4
 
 # Example plugin
 /wp-content/plugins/hello.php
