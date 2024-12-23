@@ -1,0 +1,25 @@
+.quickslide-wrapper{
+	position: relative;
+	width: 100vw;
+	left: calc(50% - 50vw);
+	background: black;
+}
+.quickslide-wrapper .slide{
+	position: relative;
+	height: 100vh;
+}
+.quickslide-wrapper .slide figure{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+@media(max-width:980px){
+	.quickslide-wrapper .slide{
+		height: 100vw;
+	}
+}

@@ -1,0 +1,178 @@
+/*
+	MENU
+*/
+#toplevel_page_zdmd ul li.wp-first-item{
+	display: none !important;
+}
+
+/*
+	FONTOGRAPHY
+*/
+.zielke_wp_admin h2{
+	clear: both;
+}
+.zielke_wp_admin h3{
+	font-size: 1rem;
+	color: #0099ff !important;
+	padding: 15px 20px;
+	border-bottom: 1px solid #dddddd;
+}
+.zielke_wp_admin p{
+	line-height: 1.7em;
+}
+
+/*
+	FORMATING AND ALIGNMENT
+*/
+.zielke_wp_admin .break{
+	display: block;
+	width: calc(100% - 20px);
+	max-width: 1000px;
+	height: 0;
+	margin: 40px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid white;
+	opacity: .2;
+}
+
+/*
+	SECTION TABLES
+*/
+.zielke_wp_admin section.option_section{
+	background: white;
+	width: calc(100% - 20px);
+	max-width: 1000px;
+}
+.zielke_wp_admin section.option_section .padding{
+	padding: 15px 20px;
+}
+.zielke_wp_admin section.option_section .padding p:first-of-type{
+	margin-top: 0;
+}
+.zielke_wp_admin section.option_section table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.zielke_wp_admin section.option_section table tr td{
+	padding: 15px 20px;
+	vertical-align: top;
+	border-bottom: 1px solid #dddddd;
+}
+.zielke_wp_admin section.option_section table tr:nth-last-child(1) td{
+	border: none;
+}
+.zielke_wp_admin section.option_section table tr td p{
+	font-weight: 600;
+}
+.zielke_wp_admin section.option_section table tr td p:first-of-type{
+	margin-top: 0;
+}
+.zielke_wp_admin section.option_section table tr td ul{
+	list-style: disc;
+	margin-left: 20px;
+}
+
+/*
+	CHECKBOX
+*/
+.zielke_wp_admin section.option_section table tr td:nth-child(1) [type="checkbox"]:not(:checked),
+.zielke_wp_admin section.option_section table tr td:nth-child(1) [type="checkbox"]:checked {
+	display: none;
+}
+.zielke_wp_admin section.option_section table tr td:nth-child(1) [type="checkbox"]:not(:checked) + label,
+.zielke_wp_admin section.option_section table tr td:nth-child(1) [type="checkbox"]:checked + label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: #0099ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+.zielke_wp_admin section.option_section table tr td:nth-child(1) [type="checkbox"]:checked + label::before{
+	content: '\f00c';
+	font-family: 'Font Awesome 5 Free', 'FontAwesome';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 32px;
+	text-align: center;
+	color: white;
+}
+
+/*
+	TEXT FIELD
+*/
+.zielke_wp_admin section.option_section table tr td:nth-child(3) select{
+	-webkit-appearance: none;
+	display: inline-block;
+	padding: 0 40px 0 10px;
+	height: 40px;
+	box-shadow: none;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABxSURBVGhD7c8xCoBADETRLa29iof3eJoU0wiirsFN5D+YduA3AAAAAADwO7NtCZ5/fm6yrbYtaP7ln0NExQyNkLcxKSKkNyZVhDyNSRkhd2NSR8hVTIkIOYspFSHHmJIRopjSEeIB5SMAAAAAADW0tgMDBmzDpUF0VAAAAABJRU5ErkJggg==);
+	background-position: right 10px center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+.zielke_wp_admin section.option_section table tr td:nth-child(3) input{
+	-webkit-appearance: none;
+	display: inline-block;
+	padding: 0 10px;
+	height: 40px;
+	box-shadow: none;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+}
+
+/*
+	GALLERY IMAGE LIST
+*/
+#zpg_userInterface ul#zpg_ui_list li{
+	position: relative;
+	background: white;
+	transition: background .2s linear;
+}
+#zpg_userInterface ul#zpg_ui_list li:hover{
+	background: #eeeeee;
+}
+#zpg_userInterface ul#zpg_ui_list li figure{
+	position: relative;
+	width: 150px !important;
+	height: 150px !important;
+	margin: 0;
+	overflow: hidden !important;
+}
+#zpg_userInterface ul#zpg_ui_list li figure img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+#zpg_userInterface ul#zpg_ui_list li .deleteImage{
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	height: 40px;
+	line-height: 40px;
+	background: white;
+	border: 1px solid #eeeeee;
+	padding: 0 1em;
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	-ms-transform: translateY(-20px);
+	transform: translateY(-20px);
+	cursor: pointer !important;
+}
+#zpg_userInterface ul#zpg_ui_list li .deleteImage:hover{
+	color: #c31616;
+}

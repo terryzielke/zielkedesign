@@ -1,0 +1,52 @@
+html{
+	body{
+		.forminator-ui{
+			.forminator-row{
+				.forminator-field,
+				.forminator-field-time{
+					label,
+					.forminator-description{
+						display: none !important;
+					}
+					input{
+						&[type=text],
+						&[type=email],
+						&[type=number]{
+							padding: 10px 20px !important;
+							background: $white !important;
+							border: 2px solid $dark !important;
+							border-radius: 1000px !important;
+						}
+					}
+					textarea{
+						padding: 10px 20px !important;
+						background: $white !important;
+						border: 2px solid $dark !important;
+						border-radius: 25px !important;
+					}
+					.forminator-button{
+						font-size: 20px !important;
+						color: $white !important;
+						padding: 10px 20px !important;
+						background: $dark !important;
+						border-radius: 1000px !important;
+						box-shadow: none !important;
+						transition: .2s all linear;
+						&:hover{
+							background: $blue !important;
+						}
+					}
+					.forminator-select{
+						.select2-selection.select2-selection--single{
+							padding: 0px 10px !important;
+							background: $white !important;
+							border: 1px solid $dark !important;
+							border-radius: 1000px !important;
+							font-size: 14px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

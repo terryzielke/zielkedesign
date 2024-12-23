@@ -1,0 +1,20 @@
+/*
+  HIDE DASHBOARD ELEMENTS
+*/
+#wp-admin-bar-new-content,
+#wp-admin-bar-wpforms-menu,
+#wp-admin-bar-user-info img,
+#wpforms_reports_widget_lite,
+#dashboard_primary,
+#dashboard_activity,
+#dashboard_quick_press,
+#menu-posts,
+#menu-comments,
+#toplevel_page_sweat_memberships .wp-submenu li:nth-child(2),
+#toplevel_page_sweat_memberships .wp-submenu li:nth-child(3){
+  display: none !important;
+}
+#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions>li{
+  margin-left: 20px !important;
+}
+/**/

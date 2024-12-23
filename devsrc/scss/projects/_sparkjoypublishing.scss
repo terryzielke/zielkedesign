@@ -1,0 +1,70 @@
+/*
+	VARIABLES
+*/
+$font_reswysokr: 'reswysokr';
+$font_euphoria: 'euphoria';
+
+$sparkjoy_blue: #1CC0F3;
+$sparkjoy_pink: #ED145A;
+$sparkjoy_yellow: #FAA61A;
+$sparkjoy_green: #A6CE39;
+$sparkjoy_white: #EDEDED;
+
+html body#sparkjoy-publishing-body{
+	overflow-x: hidden;
+	
+	/* recolor button */
+	.et_pb_button{
+		&:hover{
+			background: $sparkjoy_blue !important;
+		}
+	}
+	/* add image to first text row */
+	#article-first-text-row{
+		&::after{
+			content: '';
+			position: absolute;
+			top: 50px;
+			left: 67%;
+			width: 36vw;
+			height: calc(100% - 100px);
+			background-image: url(/wp-content/uploads/2024/07/girl-holding-magazine.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			visibility: visible;
+			@media(max-width:$lg){
+				position: relative;
+				display: block;
+				width: 100%;
+				left: 0;
+				height: 110vw;
+			}
+		}
+	}
+	
+	/* add image to last text row */
+	#article-last-text-row{
+		&::after{
+			content: '';
+			position: absolute;
+			top: 30px;
+			right: 40%;
+			width: 61vw;
+			height: calc(100% - 80px);
+			background-image: url(/wp-content/uploads/2024/07/screenshot-of-video-background.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			visibility: visible;
+			@media(max-width:$lg){
+				position: relative;
+				display: block;
+				width: 100%;
+				left: 0;
+				height: 60vw;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}

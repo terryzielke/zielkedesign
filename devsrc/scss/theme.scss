@@ -1,0 +1,42 @@
+
+//Setup
+@import 'vendor/bootstrap';
+@import 'utility/mixins';
+@import 'utility/reset';
+@import 'utility/variables';
+
+//Components
+@import 'components/global-text-format';
+@import 'components/global-form-format';
+@import 'components/buttons';
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/body';
+
+//Pages and Posts
+@import 'projects/sparkjoypublishing';
+@import 'projects/awningfactory';
+@import 'projects/sweatcity';
+
+//Modules
+@import 'modules/projects-grid';
+@import 'modules/forminator';
+@import 'modules/divi.scss';
+
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1440px;
+        padding-left: 15px;
+        padding-right: 15px;
+        .height-xxl-21px { height: 21px; }
+        .height-xxl-22px { height: 22px; }
+        .height-xxl-24px { height: 24px; }
+        .height-xxl-25px { height: 25px; }
+        .height-xxl-26px { height: 26px; }
+        .height-xxl-33px { height: 33px; }
+        .height-xxl-34px { height: 34px; }
+        .height-xxl-38px { height: 38px; }
+    }
+}

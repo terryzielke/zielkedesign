@@ -1,0 +1,41 @@
+$grey_44: #444444;
+$grey_20: #202020;
+$grey_DD: #DDDDDD;
+$grey_CC: #CCCCCC;
+$grey_EE: #EEEEEE;
+$grey_FA: #FAFAFA;
+
+$black: #000000;
+$white: #FFFFFF;
+
+$blue: #0099FF;
+$pink: #FF0099;
+$green: #00FF99;
+$dark: $grey_44;
+$light: $grey_EE;
+
+.color-blue{color: $blue;}
+.color-pink{color: $pink;}
+.color-green{color: $green;}
+.color-grey{color: $grey_44;}
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1080px;
+$xxl: 1300px;
+
+$page-width: $xl;
+$spacer: 1rem;
+
+@media only screen and  (min-width: $xl) {
+    .ps-xxl-6 {
+        padding-left: $spacer * 3.5 !important;
+    }    
+}
+
+//fonts
+$font: 'Poppins', helvetica, arial, sans-serif;
+$icons: 'Font Awesome 5 Free', 'FontAwesome' !important;
+$font-size: 20px;

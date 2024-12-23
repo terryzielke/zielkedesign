@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;url=/wp-admin/edit.php?post_type=mockup" />

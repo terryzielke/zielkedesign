@@ -1,0 +1,83 @@
+{
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+	-moz-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+	-ms-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+	tap-highlight-color: rgba(255, 255, 255, 0) !important;
+}
+body.login{
+	background: white;
+}
+#login{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 100%;
+	max-width: 300px;
+	padding: 120px 0 0;
+}
+#login h1,
+.forgetmenot{
+	display: none !important;
+}
+
+#login form{
+	box-shadow: none !important;
+	border-top: 1px solid #eeeeee;
+}
+#login form input#wp-submit{
+	background: #0088ee !important;
+	border: none !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	border-radius: 2px;
+	height: 40px;
+	width: 100%;
+}
+#login input#wp-submit:hover,
+#login input#wp-submit:focus{
+	background: #0099ff !important;
+}
+
+#login a{
+	color: #ddddde !important;
+}
+#login a:visited{
+	color: #ddddde !important;
+}
+#login a:hover,
+#login a:focus{
+	color: #0099ff !important;
+}
+
+#login #backtoblog{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 0 !important;
+	background: url(/wp-content/themes/divizielkedesign/assets/images/zielkedesign-icon.png) no-repeat center;
+	background-size: contain;
+}
+#login #backtoblog a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+/*
+	RESET PASSWORD FORM
+*/
+#login form#resetpassform .password-input-wrapper{
+	width: 100%;
+}
+.wp-core-ui .button-secondary span.dashicons::before{
+	font-family: dashicons !important;
+}

@@ -1,0 +1,13 @@
+footer#mastfoot{
+	height: 50px;
+	padding: 0 2vw;
+	*{
+		line-height: 50px;
+	}
+	@media(max-width:$lg){
+		padding: 0 20px;
+		*{
+			line-height: 20px;
+		}
+	}
+}

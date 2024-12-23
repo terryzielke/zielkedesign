@@ -1,0 +1,182 @@
+.monitor_and_mobile_mockup_wrapper{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/*
+  MONITOR
+*/
+.monitormockup_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.monitormockup_wrapper .monitormockup_content {
+  position: relative;
+  width: 120vh;
+  height: 95vh;
+  margin: auto !important;
+}
+.monitormockup_wrapper .monitormockup_content .mm_monitor {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.monitormockup_wrapper .monitormockup_content .mm_monitor img {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+.monitormockup_wrapper .monitormockup_content .mm_mockup {
+  position: absolute;
+  z-index: 1;
+  top: 9.1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 83.3%;
+  height: 60.2%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.monitormockup_wrapper .monitormockup_content .mm_mockup::before{
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: black;
+}
+.monitormockup_wrapper .monitormockup_content .mm_mockup img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+}
+
+
+/*
+  PHONE
+*/
+.mobilemockup_wrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: 6vh;
+  left: calc(50% - 65vh);
+  width: 25vh;
+  height: 50vh;
+}
+.mobilemockup_wrapper .mobilemockup_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.mobilemockup_wrapper .mobilemockup_content .mm_mobile {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.mobilemockup_wrapper .mobilemockup_content .mm_mobile img {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup {
+  position: absolute;
+  z-index: 1;
+  top: 14.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80.1%;
+  height: 74.2%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup::before{
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: black;
+}
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+}
+
+
+@media(max-width:1000px){
+  .monitor_and_mobile_mockup_wrapper{
+    height: 72vw;
+  }
+  .monitormockup_wrapper .monitormockup_content {
+    position: relative;
+    width: 90vw;
+    height: 72vw;
+    margin: auto;
+  }
+  .mobilemockup_wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: calc(50% - 50vw);
+    width: 25vw;
+    height: 50vw;
+  }
+}
+
+
+@media(max-width:500px){
+  .monitor_and_mobile_mockup_wrapper{
+    height: 180vw;
+  }
+  .monitormockup_wrapper{
+    display: none;
+  }
+  .mobilemockup_wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 5vw;
+    width: 90vw;
+    height: 180vw;
+  }
+}
+
+
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup::-webkit-scrollbar,
+.monitormockup_wrapper .monitormockup_content .mm_mockup::-webkit-scrollbar{
+  width: 0px;
+}
+.monitormockup_wrapper .monitormockup_content .mm_mockup::-webkit-scrollbar-track,
+.monitormockup_wrapper .monitormockup_content .mm_mockup::-webkit-scrollbar-thumb,
+.monitormockup_wrapper .monitormockup_content .mm_mockup:hover::-webkit-scrollbar-track,
+.monitormockup_wrapper .monitormockup_content .mm_mockup:hover::-webkit-scrollbar-thumb,
+.monitormockup_wrapper .monitormockup_content .mm_mockup::-webkit-scrollbar-corner,
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup::-webkit-scrollbar-track,
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup::-webkit-scrollbar-thumb,
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup:hover::-webkit-scrollbar-track,
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup:hover::-webkit-scrollbar-thumb,
+.mobilemockup_wrapper .mobilemockup_content .mm_mockup::-webkit-scrollbar-corner{
+  display: none;
+}

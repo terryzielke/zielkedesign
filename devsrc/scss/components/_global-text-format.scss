@@ -1,0 +1,48 @@
+html{
+	body{
+		font-weight: 400;
+		
+		a{
+			text-decoration: none !important;
+		}
+		
+		p{
+	        line-height: 150%;
+	        margin-bottom: clamp(20px, 2vw, 20px);
+	        &:last-of-type{
+		        margin-bottom: 0px;
+	        }
+		}
+	
+	    h1 {
+			font-size: clamp(40px, 4vw, 60px);
+	        margin-bottom: clamp(1px, 1vw, 10px);        
+	    }
+	
+	    h2 {
+	        font-size: clamp(25px, 3vw, 26px);
+	        margin-bottom: clamp(14px, 2vw, 20px);
+	    }
+	
+	    h3 {
+	        font-size: clamp(18px, 2vw, 20px);
+	        margin-bottom: clamp(13px, 2vw, 10px);
+	        line-height: 30px !important;
+	    }
+	
+	    h4 {
+	        font-size: clamp(16px, 2vw, 18px);
+	        margin-bottom: clamp(12px, 2vw, 15px);
+	    }
+	
+	    h5 {
+	        font-size: clamp(16px, 2vw, 18px);
+	        margin-bottom: clamp(11px, 2vw, 14px);
+	    }
+	
+	    h6 {
+	        font-size: clamp(16px, 2vw, 18px);
+	        margin-bottom: clamp(10px, 2vw, 13px);
+	    }
+	}
+}

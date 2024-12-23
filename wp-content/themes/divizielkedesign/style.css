@@ -1,0 +1,34 @@
+/*
+Theme Name:     Divi - Zielke.Design
+Theme URI:      http://zielke.design
+Description:    Child theme for Divi, customized for Zielke.Design
+Author:         Terry Zielke
+Author URI:     https://zielke.design
+Template:       Divi
+Version:        1.0.0
+*/
+
+/* sweat city fitness */
+@font-face {
+    font-family: 'bad_suabia_swingregular';
+    src: url('assets/projects/sweatcity/fonts/badsuabiaswing-regular.woff2') format('woff2'),
+         url('assets/projects/sweatcity/fonts/badsuabiaswing-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* sparkjoy publishing */
+@font-face {
+    font-family: 'reswysokr';
+    src: url('assets/projects/sparkjoypublishing/fonts/reswysokr-webfont.woff2') format('woff2'),
+         url('assets/projects/sparkjoypublishing/fonts/reswysokr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'euphoria';
+    src: url('assets/projects/sparkjoypublishing/fonts/euphoriascript-regular-webfont.woff2') format('woff2'),
+         url('assets/projects/sparkjoypublishing/fonts/euphoriascript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
